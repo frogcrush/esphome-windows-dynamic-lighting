@@ -85,7 +85,7 @@ async def to_code(config):
     # path — but WITHOUT instantiating ESPHome's TinyUSB wrapper class or
     # calling tinyusb_driver_install() with the wrong arguments.
     # ref="1.7.6~1" matches what ESPHome's own tinyusb component uses.
-    add_idf_component(name="espressif/esp_tinyusb", ref="2.1.1~1")
+    add_idf_component(name="espressif/esp_tinyusb", ref="2.1.1")
 
     # Enable TinyUSB via IDF sdkconfig — NOT via the YAML sdkconfig_options
     # block, which triggers ESPHome's tinyusb component auto-loader and causes
